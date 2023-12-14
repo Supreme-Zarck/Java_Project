@@ -1,8 +1,8 @@
-**Introduction à l'Application de Gestion d'Aéroport :**
+# Introduction à l'Application de Gestion d'Aéroport :
 
 L'application de gestion d'aéroport est une plateforme complète conçue pour simplifier et optimiser les opérations au sein d'un aéroport moderne. En combinant une interface utilisateur intuitive avec des fonctionnalités robustes, cette application vise à faciliter la gestion quotidienne pour les administrateurs, les employés et les passagers.
 
-**Fonctionnalités Principales :**
+## **Fonctionnalités Principales :**
 
 1. **Administration Centralisée :**
    - L'administrateur, grâce à son accès privilégié, peut gérer l'ensemble de l'aéroport. Cela inclut l'ajout d'employés avec leurs détails spécifiques, la création et l'affectation de vols, l'ajout d'avions avec leurs caractéristiques, ainsi que la génération de rapports exhaustifs sur l'état de l'aéroport.
@@ -25,6 +25,11 @@ L'application de gestion d'aéroport est une plateforme complète conçue pour s
 7. **Réservation pour les Passagers :**
    - Les passagers ont la possibilité de consulter les vols disponibles, de choisir leur destination, d'effectuer des réservations et de générer un reçu pour leur vol.
 
+
+
+
+
+## Les classes
 
 **Classe Admin :**
 
@@ -115,7 +120,10 @@ L'application de gestion d'aéroport est une plateforme complète conçue pour s
 
 
 
-**Base de Données pour l'Application de Gestion d'Aéroport avec MySQL :**
+
+
+
+## **Base de Données pour l'Application de Gestion d'Aéroport avec MySQL :**
 
 1. **Schéma de la Base de Données :**
    - Créer une base de données nommée "GestionAeroportDB".
@@ -148,23 +156,12 @@ L'application de gestion d'aéroport est une plateforme complète conçue pour s
 
    - **Table Vols :**
      - `vol_id` (clé primaire), `destination`, `origine`, `pilote_id` (clé étrangère), `avion_id` (clé étrangère), ...
-
-4. **Contraintes d'Intégrité Référentielle :**
-   - Définir des contraintes d'intégrité référentielle pour garantir la cohérence des données entre les tables.
-   - Par exemple, s'assurer qu'un employé est lié à un avion existant.
-
-5. **Requêtes SQL pour les Opérations Courantes :**
-   - Écrire des requêtes SQL pour les opérations courantes telles que l'insertion, la mise à jour, la sélection et la suppression de données.
+    
 
 
-6. **Connexion à la Base de Données dans le Code Java :**
-   - Utiliser JDBC pour établir une connexion à la base de données MySQL à partir du code Java.
-   - Assurer une gestion appropriée des exceptions liées à la base de données.
 
-7. **Scripts d'Initialisation et de Mise à Jour de la Base de Données :**
-   - Créer des scripts SQL pour l'initialisation initiale de la base de données et les mises à jour ultérieures si nécessaire.
 
-8. **Sauvegarde et Restauration :**
-   - Mettre en place des procédures de sauvegarde régulières pour éviter la perte de données.
-   - Élaborer un plan de restauration en cas de besoin.
+
+# UML Diagram 
+
 
