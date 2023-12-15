@@ -165,3 +165,9 @@ L'application de gestion d'aéroport est une plateforme complète conçue pour s
 # UML Diagram 
 
 ![UML_App](https://github.com/Supreme-Zarck/Java_Project/assets/148917149/981ccc6b-3e1f-45ae-9356-0d81cab69db4)
+
+
+# Class Diagram
+![AdminClass](https://github.com/Supreme-Zarck/Java_Project/assets/148917149/5f12335f-cca6-424d-bd5f-94e4d5933503)
+![EmployeeClass](https://github.com/Supreme-Zarck/Java_Project/assets/148917149/5c2f1dc1-c47a-466a-952d-ccbb65645d5d)
+![PassengerClass](https://github.com/Supreme-Zarck/Java_Project/assets/148917149/9ec3b47d-4a8e-4696-98cb-2bb5b07a2423)
