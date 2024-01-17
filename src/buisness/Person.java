@@ -1,15 +1,16 @@
 package buisness;
 
 public class Person {
-	
+	private int id;
 	private String username;
 	private String password;
 	private String nom;
 	private String prenom;
 
 ////////////////////////////////////////// Constructor 
-	public Person(String username, String password, String nom, String prenom) {
+	public Person(int id,String username, String password, String nom, String prenom) {
 		super();
+		this.id=id;
 		this.username = username;
 		this.password = password;
 		this.nom = nom;
@@ -42,10 +43,20 @@ public class Person {
 		this.prenom = prenom;
 	}
 
-	
-//////////////////////////////////////////toString
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
 	@Override
 	public String toString() {
-		return " username : " + username + "\n nom : " + nom + "\n prenom : " + prenom;
+		return "Person [id=" + id + ", username=" + username + ", password=" + password + ", nom=" + nom + ", prenom="
+				+ prenom + "]";
 	}
+
+	//////////////////////////////////////////toString
+
 }

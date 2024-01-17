@@ -43,7 +43,6 @@ L'application de gestion d'aéroport est une plateforme complète conçue pour s
    - `ajouterEmploye(nom, prenom, role, ...)`: Ajoute un nouvel employé à la base de données avec les détails fournis.
    - `ajouterVol(destination, origine, pilote, ...)`: Ajoute un nouveau vol avec les détails associés.
    - `ajouterAvion(modele, capaciteMax, ...)`: Ajoute un nouvel avion avec les informations requises.
-   - `affecterEmployeAvion(employe, avion)`: Affecte un employé à un avion en fonction de son métier.
    - `affecterEmploiDuTemps(employe, horaires)`: Affecte un emploi du temps à un employé.
    - `affecterBlocTravail(employe, blocTravail)`: Affecte un bloc de travail à un employé.
    - `genererRapportAeroport()`: Génère un rapport complet sur l'état de l'aéroport, y compris les employés, les vols, les avions, etc.

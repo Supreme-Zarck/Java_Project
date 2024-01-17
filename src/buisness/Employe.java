@@ -1,13 +1,16 @@
 package buisness;
 
+import java.util.ArrayList;
+
 public class Employe extends Person{
 //////////////////////////////////////////Attributs
 	private String role;
 	private double salaire;
+	private ArrayList<String> emploi = new ArrayList<>();
 	
 ////////////////////////////////////////// Constructor 
-	public Employe(String username, String password, String nom, String prenom, String role, double salaire) {
-		super(username,password,nom,prenom);
+	public Employe(int id,String username, String password, String nom, String prenom, String role, double salaire) {
+		super(id,username,password,nom,prenom);
 		this.role = role;
 		this.salaire = salaire;
 	}
@@ -27,10 +30,19 @@ public class Employe extends Person{
 	}
 
 	
-////////////////////////////////////////// toString
+	public ArrayList<String> getEmploi() {
+		return emploi;
+	}
+
+	public void setEmploi(ArrayList<String> emploi) {
+		this.emploi = emploi;
+	}
+
 	@Override
 	public String toString() {
-		return "L'Employe :\n"+ super.toString() + "\n role : " + role + "\n salaire : " + salaire;
+		return "Employe ["+super.toString()+"role=" + role + ", salaire=" + salaire + ", emploi=" + emploi + "]";
 	}
+
+	////////////////////////////////////////// toString
 
 }

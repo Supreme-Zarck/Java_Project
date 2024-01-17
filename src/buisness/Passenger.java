@@ -3,8 +3,8 @@ package buisness;
 public class Passenger extends Person{
 	
 /////////////////////////////////// Constructor
-	public Passenger(String username, String password, String nom, String prenom) {
-		super(username, password, nom, prenom);
+	public Passenger(int id,String username, String password, String nom, String prenom) {
+		super(id,username, password, nom, prenom);
 	}
 
 }
