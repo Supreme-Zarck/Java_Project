@@ -1,7 +1,7 @@
 package buisness;
 
 public class Person {
-	private int id;
+	public static int id;
 	private String username;
 	private String password;
 	private String nom;
@@ -51,12 +51,14 @@ public class Person {
 		this.id = id;
 	}
 
-	@Override
-	public String toString() {
-		return "Person [id=" + id + ", username=" + username + ", password=" + password + ", nom=" + nom + ", prenom="
-				+ prenom + "]";
-	}
-
 	//////////////////////////////////////////toString
 
+	@Override
+	public String toString() {
+		return "\n"+
+				"username='" + username + "\n" +
+				", password='" + password + "\n" +
+				", nom='" + nom + "\n" +
+				", prenom='" + prenom +"\n";
+	}
 }

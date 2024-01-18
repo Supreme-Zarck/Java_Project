@@ -8,13 +8,9 @@ public class MaClassePrincipale {
 		Admin admin = new Admin(1,"zarck", "0000", "zakaria", "el omari");
 		
 		admin.ajouterEmploye(2,"em1", "09898", "emmmm", "fjgfg", "pilote", 3352);
-		admin.ajouterEmploye(3,"em1", "09898", "emmmm", "fjgfg", "ground stuff", 2999);
+		admin.ajouterEmploye(3,"em1", "09898", "emmmm", "fjgfg", "pilote", 3352);
 		
-		admin.ajouterAvion(333, "boing", 343);
-		
-		admin.ajouterVol("casa", "tanja", "lundi 9pm", "lundi 12pm");
-		admin.affecterEmploiDuTemps();
-		admin.afficherEmplois();
+
 	}
 
 }

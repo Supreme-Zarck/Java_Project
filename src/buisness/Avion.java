@@ -42,8 +42,10 @@ public class Avion {
 
 	@Override
 	public String toString() {
-		return "Avion [modele=" + modele + ", capaciteMax=" + capaciteMax + ", id=" + id + "]";
+		return "Avion{" +
+				"modele='" + modele + "\n" +
+				", capaciteMax=" + capaciteMax +"\n"+
+				", id=" + id +"\n"+
+				'}';
 	}
-	
-	
 }

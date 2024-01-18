@@ -1,27 +1,27 @@
 package buisness;
 
-import java.util.Date;
-
 public class Vol {
 //////////////////////////////////////////Attributs
 	private String destination;
-	private String origine; 
+	private String origine;
 	private Employe pilote;
-	private String depart;
-	private String arrive; 
 	private Avion  avion;
-	
+	private String depart;
+	private String arrive;
+
+	private int id;
+
 	public Vol() {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Vol(String destination, String origine, Employe pilote, String depart, String arrive, Avion avion) {
-		super();
+	public Vol(int id,String destination, String origine, Employe pilote, Avion avion, String depart, String arrive) {
+		this.id=id;
 		this.destination = destination;
 		this.origine = origine;
-		this.pilote = pilote;
 		this.depart = depart;
 		this.arrive = arrive;
+		this.pilote = pilote;
 		this.avion = avion;
 	}
 
@@ -49,6 +49,14 @@ public class Vol {
 		this.pilote = pilote;
 	}
 
+	public Avion getAvion() {
+		return avion;
+	}
+
+	public void setAvion(Avion avion) {
+		this.avion = avion;
+	}
+
 	public String getDepart() {
 		return depart;
 	}
@@ -65,20 +73,23 @@ public class Vol {
 		this.arrive = arrive;
 	}
 
-	public Avion getAvion() {
-		return avion;
+	public int getId() {
+		return id;
 	}
 
-	public void setAvion(Avion avion) {
-		this.avion = avion;
+	public void setId(int id) {
+		this.id = id;
 	}
 
 	@Override
 	public String toString() {
-		return "Vol [destination=" + destination + ", origine=" + origine + ", pilote=" + pilote + ", depart=" + depart
-				+ ", arrive=" + arrive + ", avion=" + avion + "]";
+		return "Vol{" +
+				"destination='" + destination + "\n" +
+				", origine='" + origine + "\n" +
+				", pilote=" + pilote +"\n"+
+				", avion=" + avion +"\n"+
+				", depart='" + depart + "\n" +
+				", arrive='" + arrive + "\n" +
+				'}';
 	}
-
-	
-
 }
