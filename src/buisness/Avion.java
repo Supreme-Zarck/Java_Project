@@ -5,13 +5,14 @@ public class Avion {
 	private String modele;
 	private double capaciteMax;
 	private int id;
+	private static int tmp=1;
 
 	public Avion() {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Avion(int id , String modele, double capaciteMax) {
-			this.id = id;
+	public Avion(String modele, double capaciteMax) {
+			this.id = tmp++;
 			this.modele = modele;
 			this.capaciteMax = capaciteMax;
 	}
@@ -42,10 +43,8 @@ public class Avion {
 
 	@Override
 	public String toString() {
-		return "Avion{" +
-				"modele='" + modele + "\n" +
-				", capaciteMax=" + capaciteMax +"\n"+
-				", id=" + id +"\n"+
-				'}';
+		return "\n| Avion : "+id +" | Modele : " + modele + " | Capacite Max : " + capaciteMax  ;
 	}
+
+	
 }
